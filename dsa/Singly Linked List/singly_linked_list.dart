@@ -1,13 +1,22 @@
 import 'node.dart';
 
-class GFG {
-  int countnode(Node head) {
+class SniglyLinkedList {
+  int countnode(Node? head) {
     int count = 0;
-    Node? curr = head;
-    while (curr != null) {
+    while (head != null) {
       count++;
-      curr = curr.next;
+      head = head.next;
     }
     return count;
+  }
+
+  void display(Node? head) {
+    while (head != null) {
+      print(head.value);
+      if (head.next != null) {
+        print('->');
+      }
+      head = head.next;
+    }
   }
 }
