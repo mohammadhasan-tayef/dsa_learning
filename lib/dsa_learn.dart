@@ -13,9 +13,9 @@ void main(List<String> args) {
   // Function call to count the number of nodes
   // print("Count of nodes is ${SniglyLinkedList().countnode(head)}");
   var single = SniglyLinkedList();
-  Node head = new Node(10);
-  head.next = new Node(20);
-  head.next?.next = new Node(30);
-  head.next?.next?.next = new Node(100);
-  single.display(head);
+  single.addFirst(20);
+  single.addFirst(22);
+  single.addFirst(23);
+  single.addLast(2);
+  single.display();
 }
